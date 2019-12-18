@@ -1,0 +1,10 @@
+{
+  "platform-version": "2.0",
+  "product": {
+    "freshdesk": {}
+  },
+  "dependencies": {
+    "btoa": "1.2.1"
+  }
+
+}

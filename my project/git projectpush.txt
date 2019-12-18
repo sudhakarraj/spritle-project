@@ -1,0 +1,84 @@
+ssh-keygen -t rsa -C"spsudhakar0077@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/hari/.ssh/id_rsa): 
+/home/hari/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/hari/.ssh/id_rsa.
+Your public key has been saved in /home/hari/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:U0tLignD5/dvMhe/0XciM2CY5o1i0Js9ZCfhMwLI7Ts spsudhakar0077@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+| . +             |
+|  o * . . +      |
+|   . B + O o     |
+|    o * S *      |
+|     o @ @ ..  . |
+|    E = = o +oo +|
+|     o . .o.o+.oo|
+|           =. .. |
++----[SHA256]-----+
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/git1$ cat~/.ssh/id_rsa.pub
+bash: cat~/.ssh/id_rsa.pub: No such file or directory
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/git1$ cat ~/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVcFrYv62B/MFY2hZipioAAvrGGC2pSH41zzpt03I/J0MZYJxqnHkzj7IrRPBIUwiQCDwwUuf7agXhGWAUgJV63bo9VR1QRc7Ntkr4ef4r0N1kjJxNqBGfOD9Tugi8zXOHPtlAmFCvUUlC3VJ8QRB0l6rMHG5RHF3oNfAcJHmy1UtsWwkqoSEXbcGD3hpZiMBQQMtU8TMB19ihhEuQev2l5y6fHYrusuwCtIqDY/bcCzjA6mzh9kdcaEiq0iOTo3FEpmjXtsG1BfzSDcunLgJjmczWmxWe5RsoqKTspo/Lb/CMaXIOYQ70r5komkyX9ZTEASzrgISjrlFVhAxo3GLP spsudhakar0077@gmail.com
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/git1$ ^C
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/git1$ ls
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/git1$ cd..
+cd..: command not found
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/git1$ cd ..
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar$ ls
+ 12-03-2019   12-09-2019   12-14-2019   inc-2600-hiding-change-fields
+ 12-04-2019   12-10-2019   12-16-2019   infusionsoft-master
+ 12-05-2019   12-11-2019   12-17-2019   project
+ 12-06-2019   12-12-2019   git         'spritle webpage'
+ 12-07-2019   12-13-2019   git1
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar$ cd inc-2600-hiding-change-fields
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/inc-2600-hiding-change-fields$ git init
+Reinitialised existing Git repository in /home/hari/sudhakar/inc-2600-hiding-change-fields/.git/
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/inc-2600-hiding-change-fields$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/inc-2600-hiding-change-fields$ git remote add origin git@code.spritle.com:freshservice/inc-2600-hiding-change-fields.git
+fatal: remote origin already exists.
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/inc-2600-hiding-change-fields$ git add .
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/inc-2600-hiding-change-fields$ git commit -m "Initial commit"
+On branch master
+nothing to commit, working tree clean
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/inc-2600-hiding-change-fields$ cd ..
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar$ ls
+ 12-03-2019   12-09-2019   12-14-2019   inc-2600-hiding-change-fields
+ 12-04-2019   12-10-2019   12-16-2019   infusionsoft-master
+ 12-05-2019   12-11-2019   12-17-2019   project
+ 12-06-2019   12-12-2019   git         'spritle webpage'
+ 12-07-2019   12-13-2019   git1
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar$ cd 12-17-2019
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019$ ls
+ inc-2600-hiding-change-fields  'spritle webpage'
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019$  inc-2600-hiding-change-fields
+inc-2600-hiding-change-fields: command not found
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019$ cd  inc-2600-hiding-change-fields
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019/inc-2600-hiding-change-fields$ git init
+Reinitialised existing Git repository in /home/hari/sudhakar/12-17-2019/inc-2600-hiding-change-fields/.git/
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019/inc-2600-hiding-change-fields$ git remote add origin git@code.spritle.com:freshservice/inc-2600-hiding-change-fields.git
+fatal: remote origin already exists.
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019/inc-2600-hiding-change-fields$ git add .
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019/inc-2600-hiding-change-fields$ git commit -m "Initial commit"
+On branch master
+nothing to commit, working tree clean
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019/inc-2600-hiding-change-fields$ git push -u origin master
+Counting objects: 29, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (28/28), done.
+Writing objects: 100% (29/29), 108.48 KiB | 3.87 MiB/s, done.
+Total 29 (delta 1), reused 0 (delta 0)
+To code.spritle.com:freshservice/inc-2600-hiding-change-fields.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+hari@hari-HP-Pavilion-Laptop-15-cc6xx:~/sudhakar/12-17-2019/inc-2600-hiding-change-fields$ 
+

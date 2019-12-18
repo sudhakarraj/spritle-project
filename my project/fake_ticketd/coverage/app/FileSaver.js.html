@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/FileSaver.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">app/</a> FileSaver.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">21.05% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>28/133</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">22.06% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>15/68</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">3.7% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">21.21% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>28/132</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*! FileSaver.js
+ *  A saveAs() FileSaver implementation.
+ *  2014-01-24
+ *
+ *  By Eli Grey, http://eligrey.com
+ *  License: X11/MIT
+ *    See LICENSE.md
+ */
+&nbsp;
+/*global self */
+/*jslint bitwise: true, indent: 4, laxbreak: true, laxcomma: true, smarttabs: true, plusplus: true */
+&nbsp;
+/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
+&nbsp;
+var saveAs = saveAs
+  // IE 10+ (native saveAs)
+  || (typeof navigator !== "undefined" &amp;&amp;
+      navigator.msSaveOrOpenBlob &amp;&amp; <span class="branch-3 cbranch-no" title="branch not covered" >navigator.msSaveOrOpenBlob.bind(navigator))</span>
+  // Everyone else
+  || (function(view) {
+	"use strict";
+	// IE &lt;10 is explicitly unsupported
+	<span class="missing-if-branch" title="if path not taken" >I</span>if (typeof navigator !== "undefined" &amp;&amp;
+	    /MSIE [1-9]\./.test(navigator.userAgent)) {
+<span class="cstat-no" title="statement not covered" >		return;</span>
+	}
+	var
+		  doc = view.document
+		  // only get URL when necessary in case BlobBuilder.js hasn't overridden it yet
+		, get_URL = function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >			return view.URL || view.webkitURL || view;</span>
+		}
+		, URL = view.URL || <span class="branch-1 cbranch-no" title="branch not covered" >view.webkitURL </span>|| <span class="branch-2 cbranch-no" title="branch not covered" >view</span>
+		, save_link = doc.createElementNS("http://www.w3.org/1999/xhtml", "a")
+		, can_use_save_link = !view.externalHost &amp;&amp; "download" in save_link
+		, click = function(node) <span class="fstat-no" title="function not covered" >{</span>
+			var event = <span class="cstat-no" title="statement not covered" >doc.createEvent("MouseEvents");</span>
+<span class="cstat-no" title="statement not covered" >			event.initMouseEvent(</span>
+				"click", true, false, view, 0, 0, 0, 0, 0
+				, false, false, false, false, 0, null
+			);
+<span class="cstat-no" title="statement not covered" >			node.dispatchEvent(event);</span>
+		}
+		, webkit_req_fs = view.webkitRequestFileSystem
+		, req_fs = view.requestFileSystem || webkit_req_fs || <span class="branch-2 cbranch-no" title="branch not covered" >view.mozRequestFileSystem</span>
+		, throw_outside = function(ex) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >			(view.setImmediate || view.setTimeout)(function() <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >				throw ex;</span>
+			}, 0);
+		}
+		, force_saveable_type = "application/octet-stream"
+		, fs_min_size = 0
+		, deletion_queue = []
+		, process_deletion_queue = function() <span class="fstat-no" title="function not covered" >{</span>
+			var i = <span class="cstat-no" title="statement not covered" >deletion_queue.length;</span>
+<span class="cstat-no" title="statement not covered" >			while (i--) {</span>
+				var file = <span class="cstat-no" title="statement not covered" >deletion_queue[i];</span>
+<span class="cstat-no" title="statement not covered" >				if (typeof file === "string") { // file is an object URL</span>
+<span class="cstat-no" title="statement not covered" >					URL.revokeObjectURL(file);</span>
+				} else { // file is a File
+<span class="cstat-no" title="statement not covered" >					file.remove();</span>
+				}
+			}
+<span class="cstat-no" title="statement not covered" >			deletion_queue.length = 0; </span>// clear queue
+		}
+		, dispatch = function(filesaver, event_types, event) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >			event_types = [].concat(event_types);</span>
+			var i = <span class="cstat-no" title="statement not covered" >event_types.length;</span>
+<span class="cstat-no" title="statement not covered" >			while (i--) {</span>
+				var listener = <span class="cstat-no" title="statement not covered" >filesaver["on" + event_types[i]];</span>
+<span class="cstat-no" title="statement not covered" >				if (typeof listener === "function") {</span>
+<span class="cstat-no" title="statement not covered" >					try {</span>
+<span class="cstat-no" title="statement not covered" >						listener.call(filesaver, event || filesaver);</span>
+					} catch (ex) {
+<span class="cstat-no" title="statement not covered" >						throw_outside(ex);</span>
+					}
+				}
+			}
+		}
+		, FileSaver = function(blob, name) <span class="fstat-no" title="function not covered" >{</span>
+			// First try a.download, then web filesystem, then object URLs
+			var
+				  filesaver = <span class="cstat-no" title="statement not covered" >this</span>
+				, type = <span class="cstat-no" title="statement not covered" >blob.type</span>
+				, blob_changed = <span class="cstat-no" title="statement not covered" >false</span>
+				, object_url
+				, target_view
+				, get_object_url = <span class="cstat-no" title="statement not covered" >function() <span class="fstat-no" title="function not covered" >{</span></span>
+					var object_url = <span class="cstat-no" title="statement not covered" >get_URL().createObjectURL(blob);</span>
+<span class="cstat-no" title="statement not covered" >					deletion_queue.push(object_url);</span>
+<span class="cstat-no" title="statement not covered" >					return object_url;</span>
+				}
+				, dispatch_all = <span class="cstat-no" title="statement not covered" >function() <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >					dispatch(filesaver, "writestart progress write writeend".split(" "));</span>
+				}
+				// on any filesys errors revert to saving with object URLs
+				, fs_error = <span class="cstat-no" title="statement not covered" >function() <span class="fstat-no" title="function not covered" >{</span></span>
+					// don't create more object URLs than needed
+<span class="cstat-no" title="statement not covered" >					if (blob_changed || !object_url) {</span>
+<span class="cstat-no" title="statement not covered" >						object_url = get_object_url(blob);</span>
+					}
+<span class="cstat-no" title="statement not covered" >					if (target_view) {</span>
+<span class="cstat-no" title="statement not covered" >						target_view.location.href = object_url;</span>
+					} else {
+<span class="cstat-no" title="statement not covered" >						window.open(object_url, "_blank");</span>
+					}
+<span class="cstat-no" title="statement not covered" >					filesaver.readyState = filesaver.DONE;</span>
+<span class="cstat-no" title="statement not covered" >					dispatch_all();</span>
+				}
+				, abortable = <span class="cstat-no" title="statement not covered" >function(func) <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >					return function() <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >						if (filesaver.readyState !== filesaver.DONE) {</span>
+<span class="cstat-no" title="statement not covered" >							return func.apply(this, arguments);</span>
+						}
+					};
+				}
+				, create_if_not_found = <span class="cstat-no" title="statement not covered" >{create: true, exclusive: false}</span>
+				, slice
+			;
+<span class="cstat-no" title="statement not covered" >			filesaver.readyState = filesaver.INIT;</span>
+<span class="cstat-no" title="statement not covered" >			if (!name) {</span>
+<span class="cstat-no" title="statement not covered" >				name = "download";</span>
+			}
+<span class="cstat-no" title="statement not covered" >			if (can_use_save_link) {</span>
+<span class="cstat-no" title="statement not covered" >				object_url = get_object_url(blob);</span>
+				// FF for Android has a nasty garbage collection mechanism
+				// that turns all objects that are not pure javascript into 'deadObject'
+				// this means `doc` and `save_link` are unusable and need to be recreated
+				// `view` is usable though:
+<span class="cstat-no" title="statement not covered" >				doc = view.document;</span>
+<span class="cstat-no" title="statement not covered" >				save_link = doc.createElementNS("http://www.w3.org/1999/xhtml", "a");</span>
+<span class="cstat-no" title="statement not covered" >				save_link.href = object_url;</span>
+<span class="cstat-no" title="statement not covered" >				save_link.download = name;</span>
+				var event = <span class="cstat-no" title="statement not covered" >doc.createEvent("MouseEvents");</span>
+<span class="cstat-no" title="statement not covered" >				event.initMouseEvent(</span>
+					"click", true, false, view, 0, 0, 0, 0, 0
+					, false, false, false, false, 0, null
+				);
+<span class="cstat-no" title="statement not covered" >				save_link.dispatchEvent(event);</span>
+<span class="cstat-no" title="statement not covered" >				filesaver.readyState = filesaver.DONE;</span>
+<span class="cstat-no" title="statement not covered" >				dispatch_all();</span>
+<span class="cstat-no" title="statement not covered" >				return;</span>
+			}
+			// Object and web filesystem URLs have a problem saving in Google Chrome when
+			// viewed in a tab, so I force save with application/octet-stream
+			// http://code.google.com/p/chromium/issues/detail?id=91158
+<span class="cstat-no" title="statement not covered" >			if (view.chrome &amp;&amp; type &amp;&amp; type !== force_saveable_type) {</span>
+<span class="cstat-no" title="statement not covered" >				slice = blob.slice || blob.webkitSlice;</span>
+<span class="cstat-no" title="statement not covered" >				blob = slice.call(blob, 0, blob.size, force_saveable_type);</span>
+<span class="cstat-no" title="statement not covered" >				blob_changed = true;</span>
+			}
+			// Since I can't be sure that the guessed media type will trigger a download
+			// in WebKit, I append .download to the filename.
+			// https://bugs.webkit.org/show_bug.cgi?id=65440
+<span class="cstat-no" title="statement not covered" >			if (webkit_req_fs &amp;&amp; name !== "download") {</span>
+<span class="cstat-no" title="statement not covered" >				name += ".download";</span>
+			}
+<span class="cstat-no" title="statement not covered" >			if (type === force_saveable_type || webkit_req_fs) {</span>
+<span class="cstat-no" title="statement not covered" >				target_view = view;</span>
+			}
+<span class="cstat-no" title="statement not covered" >			if (!req_fs) {</span>
+<span class="cstat-no" title="statement not covered" >				fs_error();</span>
+<span class="cstat-no" title="statement not covered" >				return;</span>
+			}
+<span class="cstat-no" title="statement not covered" >			fs_min_size += blob.size;</span>
+<span class="cstat-no" title="statement not covered" >			req_fs(view.TEMPORARY, fs_min_size, abortable(function(fs) <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >				fs.root.getDirectory("saved", create_if_not_found, abortable(function(dir) <span class="fstat-no" title="function not covered" >{</span></span>
+					var save = <span class="cstat-no" title="statement not covered" >function() <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >						dir.getFile(name, create_if_not_found, abortable(function(file) <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >							file.createWriter(abortable(function(writer) <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >								writer.onwriteend = function(event) <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >									target_view.location.href = file.toURL();</span>
+<span class="cstat-no" title="statement not covered" >									deletion_queue.push(file);</span>
+<span class="cstat-no" title="statement not covered" >									filesaver.readyState = filesaver.DONE;</span>
+<span class="cstat-no" title="statement not covered" >									dispatch(filesaver, "writeend", event);</span>
+								};
+<span class="cstat-no" title="statement not covered" >								writer.onerror = function() <span class="fstat-no" title="function not covered" >{</span></span>
+									var error = <span class="cstat-no" title="statement not covered" >writer.error;</span>
+<span class="cstat-no" title="statement not covered" >									if (error.code !== error.ABORT_ERR) {</span>
+<span class="cstat-no" title="statement not covered" >										fs_error();</span>
+									}
+								};
+<span class="cstat-no" title="statement not covered" >								"writestart progress write abort".split(" ").forEach(function(event) <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >									writer["on" + event] = filesaver["on" + event];</span>
+								});
+<span class="cstat-no" title="statement not covered" >								writer.write(blob);</span>
+<span class="cstat-no" title="statement not covered" >								filesaver.abort = function() <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >									writer.abort();</span>
+<span class="cstat-no" title="statement not covered" >									filesaver.readyState = filesaver.DONE;</span>
+								};
+<span class="cstat-no" title="statement not covered" >								filesaver.readyState = filesaver.WRITING;</span>
+							}), fs_error);
+						}), fs_error);
+					};
+<span class="cstat-no" title="statement not covered" >					dir.getFile(name, {create: false}, abortable(function(file) <span class="fstat-no" title="function not covered" >{</span></span>
+						// delete file if it already exists
+<span class="cstat-no" title="statement not covered" >						file.remove();</span>
+<span class="cstat-no" title="statement not covered" >						save();</span>
+					}), abortable(function(ex) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >						if (ex.code === ex.NOT_FOUND_ERR) {</span>
+<span class="cstat-no" title="statement not covered" >							save();</span>
+						} else {
+<span class="cstat-no" title="statement not covered" >							fs_error();</span>
+						}
+					}));
+				}), fs_error);
+			}), fs_error);
+		}
+		, FS_proto = FileSaver.prototype
+		, saveAs = function(blob, name) <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >			return new FileSaver(blob, name);</span>
+		}
+	;
+	FS_proto.abort = function() <span class="fstat-no" title="function not covered" >{</span>
+		var filesaver = <span class="cstat-no" title="statement not covered" >this;</span>
+<span class="cstat-no" title="statement not covered" >		filesaver.readyState = filesaver.DONE;</span>
+<span class="cstat-no" title="statement not covered" >		dispatch(filesaver, "abort");</span>
+	};
+	FS_proto.readyState = FS_proto.INIT = 0;
+	FS_proto.WRITING = 1;
+	FS_proto.DONE = 2;
+&nbsp;
+	FS_proto.error =
+	FS_proto.onwritestart =
+	FS_proto.onprogress =
+	FS_proto.onwrite =
+	FS_proto.onabort =
+	FS_proto.onerror =
+	FS_proto.onwriteend =
+		null;
+&nbsp;
+	view.addEventListener("unload", process_deletion_queue, false);
+	saveAs.unload = function() <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >		process_deletion_queue();</span>
+<span class="cstat-no" title="statement not covered" >		view.removeEventListener("unload", process_deletion_queue, false);</span>
+	};
+	return saveAs;
+}(
+	   typeof self !== "undefined" &amp;&amp; self
+	|| <span class="branch-2 cbranch-no" title="branch not covered" >typeof window !== "undefined" </span>&amp;&amp; <span class="branch-3 cbranch-no" title="branch not covered" >window</span>
+	|| <span class="branch-4 cbranch-no" title="branch not covered" >this.content</span>
+));
+// `self` is undefined in Firefox for Android content script context
+// while `this` is nsIContentFrameMessageManager
+// with an attribute `content` that corresponds to the window
+&nbsp;
+<span class="missing-if-branch" title="if path not taken" >I</span>if (typeof module !== "undefined") <span class="cstat-no" title="statement not covered" >module.exports = saveAs;</span>
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Dec 05 2019 09:43:59 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
