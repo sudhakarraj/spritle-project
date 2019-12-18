@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="modal.css" /> 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://static.freshdev.io/fdk/2.0/assets/freshdesk.css"
+    />
+    
+  </head>
+
+  <body>
+    <p id="create_success" class="create_success">
+      <b>The contact has been successfully created!</b>
+    </p>
+    <p id="lead_create_status"></p>
+    <div id="lead_form" class="container">
+      <div id="invalid_email" class="invalid_email" >
+        The contact has invalid email address!
+      </div>
+      <label for="contact_name_first">First Name</label>
+      <input
+        id="name"
+        type="text"
+        class="form-control"
+        placeholder="Enter the contact's first name"
+      />
+      
+      <br />
+
+      <label for="contact_email">Email address</label>
+      <input
+        id="email"
+        type="email"
+        class="form-control"
+        placeholder="Enter the contact's email"
+      />
+      <br />
+      <label for="contact_phone">Phone number</label>
+      <input
+        id="phone_number"
+        type="text"
+        class="form-control"
+        placeholder="Enter the contact's phone number"
+      />
+      <br />
+      <br />
+      <br />
+      <button id="submitcontact" type="submit" class="btn btn-success">
+        Create
+      </button>
+    </div>
+  </body>
+
+  <script src="modal.js"></script>
+  
+</html>

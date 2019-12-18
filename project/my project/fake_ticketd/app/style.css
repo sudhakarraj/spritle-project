@@ -1,0 +1,16 @@
+.logo {
+    background: url('freshdesk_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    margin-top: 25px;
+}
+
+.loading {
+    position: fixed;
+    margin: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}

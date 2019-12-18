@@ -1,0 +1,8 @@
+{
+    "apiKey": {
+      "display_name": "Excalibur API",
+      "description": "Please enter the API Key",
+      "type": "text",
+      "required": true
+    }
+}
